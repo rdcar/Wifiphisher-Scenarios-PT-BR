@@ -1,6 +1,6 @@
 # Wifiphisher Scenarios PT - BR
 ![](https://images2.imgbox.com/15/78/CKinxOrV_o.png)
-Esse repositório contém cenários de fake AP para serem usados no [Wifiphisher](github.com/wifiphisher/wifiphisher) traduzidos para o Português do Brasil.
+> Esse repositório contém captive portals falsos para serem usados no [Wifiphisher](github.com/wifiphisher/wifiphisher) traduzidos para o Português do Brasil.
 
 ## Instalação
 Inclua esses cenários no diretório `wifiphisher/data/phishingpages` .
